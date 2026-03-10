@@ -13,16 +13,19 @@ jobs:
       - name: checkout code
         run: echo "Code clone ho gya"
   build:
+    needs: code
     runs-on: ubuntu-latest
     steps:
       - name: Build docker container
         run: echo "Docker container build ho gya"
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: test the container
         run: echo "Test done ho gya"
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Deploy on server
