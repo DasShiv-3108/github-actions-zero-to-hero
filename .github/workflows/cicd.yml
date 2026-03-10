@@ -1,4 +1,4 @@
-#This is the name of worflow
+ #This is the name of worflow
 name: cicd
 
 # manual click deliver
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: checkout code
-        run: "Code clone ho gya"
+        run: echo "Code clone ho gya"
   build:
     runs-on: ubuntu-latest
     steps:
