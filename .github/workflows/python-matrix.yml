@@ -1,9 +1,7 @@
 name: Pyhon lint
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: 
 
 jobs:
     validate:
@@ -27,4 +25,5 @@ jobs:
             run: pip install -r requirements.txt
 
           - name: run linter
+
             run: flake8 app.py
