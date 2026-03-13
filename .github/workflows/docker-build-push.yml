@@ -25,6 +25,5 @@ jobs:
               with:
                 push: true
                 tags: |
-                    ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.GITHUB.HEAD_REF }}
                     ${{ vars.DOCKERHUB_USER }}/github-actions-app:latest
                     ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.GITHUB.SHA }}
