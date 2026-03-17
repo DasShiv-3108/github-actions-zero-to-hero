@@ -1,0 +1,19 @@
+name: Docker lint
+
+on:
+    workflow_call:
+
+jobs:
+    validate-dockerfile:
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: action/checkout@v4
+
+            - name: Validate Dockerfile
+              uses: hadolint/hadolint-action@3.1.0
+              with:
+                Dockerfile: Dockerfile
+                
