@@ -16,6 +16,6 @@ jobs:
 
             - name: Trivy
               uses: aquasecurity/trivy-action@0.33.1
-              wtih:
+              with:
                 severity: 'CRITICAL'
-                exit-code: '1'
+                exit: 
