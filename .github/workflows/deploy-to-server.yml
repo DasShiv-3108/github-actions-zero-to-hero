@@ -16,7 +16,7 @@ jobs:
               uses: appleboy/ssh-acton@v1.0.3
               with:
                 host: ${{ secrets.EC2_SSH_HOST }}
-                username: ${{ secrest.EC2_SSH_USER }}
+                username: ${{ secrets.EC2_SSH_USER }}
                 key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
                 script: |
                    echo "Starting Deployment"
