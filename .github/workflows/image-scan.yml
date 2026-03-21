@@ -20,3 +20,4 @@ jobs:
                 image-ref: ${{ vars.DOCKERHUB_USER }}/github-actions-app:latest
                 severity: CRITICAL,HIGH
                 exit: 1
+           
