@@ -10,10 +10,10 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: action/checkout@v4
+              uses: actions/checkout@v4
 
             - name: Validate Dockerfile
-              uses: hadolint/hadolint-action@3.1.0
+              uses: hadolint/hadolint-action@v3.1.0
               with:
                 Dockerfile: Dockerfile
                 
