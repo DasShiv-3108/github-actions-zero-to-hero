@@ -1,7 +1,9 @@
 name: DevSecOps End to end pipeline
 
 on:
-   workflow_dispatch:
+   push:
+    branches:
+        - main
 
 jobs:
   Code-Quality:
