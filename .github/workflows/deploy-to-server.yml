@@ -12,7 +12,7 @@ jobs:
             
 
             - name: SSH to prod server
-              uses: appleboy/ssh-action@v1.2.5
+              uses: appleboy/ssh-action@v1
               with:
                 host: ${{ secrets.EC2_SSH_HOST }}
                 username: ${{ secrets.EC2_SSH_USER }}
