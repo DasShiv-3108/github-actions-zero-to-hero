@@ -1,10 +1,12 @@
 name: Deploy to Server
 
+on:
+    workflow_call:
+        
 
-on: [push]
 jobs:
   build:
-    name: Build
+    name: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Execute remote SSH commands using password
@@ -15,4 +17,3 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: whoami
-                   
